@@ -23,7 +23,8 @@ The command between normal tuya protocol and this one overlapped too much.
 | 19 	| doorbell             	| Report Only   	| Bool      	|                                                                                                                                                                  	|
 
 ## Hidden features:
-- Request remote unlock (9 + #) it set time left to DP9, you must answer with DP10. My implementation require that to answer the unlock, you also needs to send the totp of 30s and length 6 which was generated using the app too.
+- Request remote unlock (9 + #) it set time left to DP9, you must answer with DP10.
+- When input password of length 7, it will check with temporary password
 - When input password of length 8, it will check with dynamic password
 
 ## Configuration variables:
